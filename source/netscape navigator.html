@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bàn cờ vua</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        td, th {
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .black {
+            background-color: black;
+        }
+        .white {
+            background-color: white;
+        }
+        .border-top th {
+            background-color: orange;
+            color: black;
+            font-weight: bold;
+        }
+        .border-left {
+            background-color: orange;
+            color: black;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Bàn cờ vua</h2>
+
+<table>
+    <!-- Hàng đầu tiên: số 1-8 -->
+    <tr class="border-top">
+        <th></th>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+        <th>5</th>
+        <th>6</th>
+        <th>7</th>
+        <th>8</th>
+    </tr>
+
+    <!-- Các hàng A-H -->
+    <script>
+        let letters = ['A','B','C','D','E','F','G','H'];
+        document.write('');
+        for(let i=0; i<8; i++){
+            document.write('<tr>');
+            document.write('<th class="border-left">'+letters[i]+'</th>');
+            for(let j=0; j<8; j++){
+                let color = (i+j)%2==0 ? 'white' : 'black';
+                document.write('<td class="'+color+'"></td>');
+            }
+            document.write('</tr>');
+        }
+    </script>
+</table>
+
+</body>
+</html>
