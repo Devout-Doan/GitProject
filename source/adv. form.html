@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Đăng Ký Người Dùng</title>
+    <style>
+        body {
+            font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
+        }
+        form {
+            width: 300px;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="email"], input[type="tel"] {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            margin-top: 10px;
+            padding: 5px 15px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Mô tả</h2>
+
+<form method="POST" action="http://demo.codegym.vn/6/registration_form/register.php">
+    <label for="name">Họ và tên:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Số điện thoại:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label>Giới tính:</label>
+    <input type="radio" id="male" name="gender" value="Nam" checked>
+    <label for="male" style="display:inline;">Nam</label>
+    <input type="radio" id="female" name="gender" value="Nữ">
+    <label for="female" style="display:inline;">Nữ</label><br><br>
+
+    <input type="submit" value="Đăng ký">
+</form>
+
+</body>
+</html>
