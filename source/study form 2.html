@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Đăng Ký Học Viên</title>
+  <style>
+      body {
+          font-family: "Lucida Grande","Lucida Sans Unicode",Tahoma,sans-serif;
+      }
+      .container {
+          width: 400px;
+          background-color: #ffffcc;
+          padding: 10px;
+          border: 1px solid #ccc;
+      }
+      .header {
+          background-color: #ccffcc;
+          color: blue;
+          font-weight: bold;
+          padding: 5px;
+      }
+      .label {
+          width: 80px;
+          display: inline-block;
+          margin-top: 8px;
+      }
+      .buttons {
+          margin-top: 10px;
+      }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header">ĐĂNG KÝ HỌC VIÊN</div>
+  <form>
+    <label class="label">Họ và tên</label>
+    <input type="text" name="fullname"><br>
+
+    <label class="label">Ngày sinh</label>
+    <input type="date" name="birthday"><br>
+
+    <label class="label">Giới tính</label>
+    <input type="radio" name="gender" value="Nam"> Nam
+    <input type="radio" name="gender" value="Nữ"> Nữ<br>
+
+    <label class="label">Địa chỉ</label>
+    <textarea name="address" rows="3" cols="30"></textarea><br>
+
+    <label class="label">Lớp</label>
+    <select name="class">
+      <option>--Chọn lớp--</option>
+      <option>Class A</option>
+      <option>Class B</option>
+      <option>Class C</option>
+    </select><br>
+
+    <label class="label">Email</label>
+    <input type="email" name="email"><br>
+
+    <label class="label">Điện thoại</label>
+    <input type="tel" name="phone"><br>
+
+    <div class="buttons">
+      <input type="submit" value="Đăng ký">
+      <input type="reset" value="Nhập lại">
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
