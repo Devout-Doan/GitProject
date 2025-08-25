@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Sở Thích Của Bạn</title>
+  <style>
+      body {
+          font-family: "Lucida Grande","Lucida Sans Unicode",Tahoma,sans-serif;
+      }
+      .container {
+          width: 400px;
+          background-color: #f0f8ff;
+          border: 1px solid #ccc;
+          padding: 10px;
+      }
+      .header {
+          background-color: orange;
+          color: white;
+          text-align: center;
+          padding: 5px;
+          font-weight: bold;
+      }
+      .label {
+          width: 80px;
+          display: inline-block;
+          margin-top: 8px;
+      }
+      .buttons {
+          margin-top: 10px;
+      }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header">SỞ THÍCH CỦA BẠN</div>
+  <form>
+    <label class="label">Họ và tên</label>
+    <input type="text" name="yourname"><br>
+
+    <label class="label">Email</label>
+    <input type="email" name="email"><br>
+
+    <label class="label">Sở thích</label>
+    <input type="checkbox" name="hobby" value="Thể thao"> Thể thao
+    <input type="checkbox" name="hobby" value="Âm nhạc"> Âm nhạc
+    <input type="checkbox" name="hobby" value="Đọc sách"> Đọc sách<br>
+
+    <label class="label"></label>
+    <input type="checkbox" name="hobby" value="Lướt web"> Lướt web
+    <input type="checkbox" name="hobby" value="Chơi game"> Chơi game
+    <input type="checkbox" name="hobby" value="Điện ảnh"> Điện ảnh<br>
+
+    <label class="label"></label>
+    <input type="checkbox" name="hobby" value="Du lịch"> Du lịch<br>
+
+    <div class="buttons">
+      <input type="submit" value="Gửi thông tin">
+      <input type="reset" value="Nhập lại">
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
